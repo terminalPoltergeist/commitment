@@ -5,4 +5,5 @@ def directory(path):
     if not os.path.isdir(home_dir + "/.commitment"):
         os.system("mkdir " + home_dir + "/.commitment")
     os.system("git log --pretty=format:'%h,%an,%ar,%s' > " + home_dir + "/.commitment/log.csv")
+    
 

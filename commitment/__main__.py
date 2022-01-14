@@ -3,6 +3,8 @@ import os
 import argparse
 from .verification import verify
 from .directory import directory
+from .graphics import app
+from .logic import logic
 
 def main():
     # initializes parser and gathers arguments
@@ -11,6 +13,8 @@ def main():
     git_repo = verify()
     if git_repo != "":
         directory(git_repo)
+        app()
+        logic()
 
 if __name__ == '__main__':
     main()

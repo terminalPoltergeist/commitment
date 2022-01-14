@@ -1,4 +1,4 @@
-import os.path
+import os
 
 parent = ""
 def verify():
