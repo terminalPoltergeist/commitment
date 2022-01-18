@@ -1,7 +1,7 @@
 import os
 
-parent = ""
 def verify():
+    parent = ""
     # current working directory
     path = os.path.abspath(os.getcwd())
     dirs = path.split("/")
