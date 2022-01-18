@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter.ttk import *
+import os
 
 # solution from https://stackoverflow.com/questions/3352918/how-to-center-a-window-on-the-screen-in-tkinter
 def center(win):
@@ -24,5 +25,14 @@ def app():
     root.geometry("500x750")
     center(root)
     root.title("Commitment")
-    label = Label(root, text ="Hello World !").pack()
+    fp = open(os.path.expanduser('~') + '/.commitment/log.csv', 'r')
+    log_list = fp.readlines()
+    count = 0 
+    for i in log_list:
+        count += 1
+    #label = Label(root, text =log_list).pack()
+    canvas = Canvas(root)
+    canvas.create_oval(10, 10, 80, 80, outline="#f11",
+            fill="#1f1", width=2)
+    canvas.pack()
     root.mainloop()
