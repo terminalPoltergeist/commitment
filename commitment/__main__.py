@@ -22,7 +22,7 @@ class Instance:
             # username of git user
             self.username = subprocess.check_output(['git', 'config', 'user.name']).decode('ascii').strip()
             # http url of remote repository
-            self.http_url = 'https://github.com/' + self.username + '/' + self.project_name) #add '/tree/*commit hash*' to get full repo at commit, replace '/tree/' with '/commit/' to go to specific commit
+            self.http_url = ('https://github.com/' + self.username + '/' + self.project_name) #add '/tree/*commit hash*' to get full repo at commit, replace '/tree/' with '/commit/' to go to specific commit
         else:
             print("Not a git repository or child of git repository. Change to a git repository and run again")
     def get_repo(self):
@@ -49,6 +49,7 @@ def main():
     parser = argparse.ArgumentParser(description='Display git commit history in a graphical interface.', epilog='More: https://github.com/terminalPoltergeist/commitment.git')
     args = parser.parse_args()
     inst = Instance()
+    inst.pull_data()
 
 if __name__ == '__main__':
     main()
