@@ -19,6 +19,10 @@
   <a href="https://github.com/terminalPoltergeist/commitment/issues">Request Feature</a>
   <br />
   <br />
+  <a href="https://github.com/terminalPoltergeist/commitment/stargazers">
+     <img src="https://img.shields.io/github/stars/terminalPoltergeist/commitment.svg?style=flat-square&color=blue" alt="stars">
+  </a>
+  &nbsp;
   <a href="https://github.com/terminalPoltergeist/commitment/graphs/contributors">
      <img src="https://img.shields.io/github/contributors/terminalPoltergeist/commitment.svg?style=flat-square&color=blue" alt="contributors">
   </a>
@@ -27,20 +31,28 @@
      <img src="https://img.shields.io/github/forks/terminalPoltergeist/commitment.svg?style=flat-square&color=blue" alt="forks">
   </a>
   &nbsp;
-  <a href="https://github.com/terminalPoltergeist/commitment/stargazers">
-     <img src="https://img.shields.io/github/stars/terminalPoltergeist/commitment.svg?style=flat-square&color=blue" alt="stars">
-  </a>
-  &nbsp;
   <a href="https://github.com/terminalPoltergeist/commitment/issues">
-     <img src="https://img.shields.io/github/issues/terminalPoltergeist/commitment.svg?style=flat-square&color=blue" alt="issues">
+     <img src="https://img.shields.io/github/issues/terminalPoltergeist/commitment.svg?style=flat-square&color=yellow" alt="issues">
   </a>
   &nbsp;
+  <a href="https://github.com/terminalPoltergeist/commitment/pulls">
+    <img src="https://img.shields.io/github/issues-pr-raw/terminalPoltergeist/commitment?style=flat-square&color=orange" alt="open pull-requests">
+  </a>
+  &nbsp;
+  <a href="https://github.com/terminalPoltergeist/commitment/pulls?q=is%3Apr+is%3Aclosed">
+    <img src="https://img.shields.io/github/issues-pr-closed-raw/terminalPoltergeist/commitment?color=blueviolet&style=flat-square" alt="closed pull-requests">
+  </a>
+  <br/>
   <a href="https://github.com/terminalPoltergeist/commitment/tags">
      <img src="https://img.shields.io/github/v/tag/terminalPoltergeist/commitment?label=version&style=flat-square&color=blue" alt="version">
   </a>
   &nbsp;
   <a href="https://github.com/terminalPoltergeist/commitment/blob/main/LICENSE.txt">
      <img src="https://img.shields.io/github/license/terminalPoltergeist/commitment.svg?style=flat-square&color=blue" alt="license">
+  </a>
+  &nbsp;
+  <a href="">
+    <img src="https://img.shields.io/badge/-CHANGELOG-blue?style=flat-square" alt="changelog">
   </a>
 </div>
 </div>
