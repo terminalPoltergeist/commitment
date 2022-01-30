@@ -151,6 +151,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Release 1.0.0!!
 
 See the [open issues](https://github.com/terminalPoltergeist/commitment/issues) for a full list of proposed features (and known issues).
+<br/>
 See the [CHANGELOG](https://github.com/terminalPoltergeist/commitment/blob/develop/docs/CHANGELOG.md) to see previous and planed changes.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
