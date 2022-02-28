@@ -5,7 +5,7 @@ import subprocess
 import tkinter as tk
 from tkinter.ttk import *
 
-class Instance:
+class Backend:
     def __init__(self):
         # directory where application is run
         self.dir = os.path.abspath(os.getcwd())
@@ -44,12 +44,13 @@ class Instance:
             os.system("mkdir " + self.home + "/.commitment")
         os.system("git log --pretty=format:'%h,%an,%ar,%s, %D' --all > " + self.home + "/.commitment/log.csv")
 
-class GraphicsInstance(tk.Tk):
-    def __init__(self):
+class Graphics(tk.Tk):
+    def __init__(self, backend):
         super().__init__()
         self.geometry("500x750")
         self.center(self)
-        self.title("Commitment")
+        project = backend.project_name
+        self.title("Commitment - " + project)
         self.canvas = tk.Canvas(self)
         self.canvas.create_oval(10,10,80,80, outline="#f11", fill="#1f1", width=2)
         self.canvas.pack()
@@ -80,8 +81,8 @@ def main():
     # initialize parser and gather arguments
     parser = argparse.ArgumentParser(description='Display git commit history in a graphical interface.', epilog='More: https://github.com/terminalPoltergeist/commitment.git')
     args = parser.parse_args()
-    inst = Instance()
-    graph = GraphicsInstance()
+    inst = Backend()
+    graph = Graphics(inst)
 
 if __name__ == '__main__':
     main()
